@@ -17,9 +17,8 @@ total_load=data_df['sum'].to_numpy()  # sum of waste and ore
 
 
 month_list=np.unique(data_df['month'].to_numpy())
-level_list=[1095,1105,1120,1135,1150,1165,1180,1195,1210,1225,1240,1255,1270,1285,
-1300,1315,1330,1345,1360,1375,1390,1405,1420,1435,1450,1465,1480,1495,1510,1525,
-1540,1555,1570,1585,1600,1615,1630,1645,1660,1675]
+level_list=[i for i in range (1105, 1680, 15)]
+level_list.insert(0, 1095)
 
 # print (data_df)
 
@@ -70,7 +69,7 @@ df = pd.DataFrame(level_mon_info)
 df = df.rename(columns={0: 'month', 1: 'Level', 2:'tonnage', 3: 'waste', 4: 'ore', 5: 'total_weight'})
 print (df)
 
-df.to_excel("Result.xlsx")  
+# df.to_excel("Result.xlsx")  
 
 
 
