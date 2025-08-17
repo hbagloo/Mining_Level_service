@@ -1,1 +1,7 @@
+Monthly Mining Data Aggregation Script
+- Language: Python (pandas, NumPy)
+- Function: Aggregates CSV mining data by month and level, calculates tonnage, waste, ore, total weight
+- Automation: Reads raw CSV and outputs a clean summary automatically
+- Output example: Result.xlsx / DataFrame
+---------------
 Data is for the year 1403 (2023)
